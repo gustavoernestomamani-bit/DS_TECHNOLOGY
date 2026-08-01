@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema de Información - Tienda de Computadoras</title>
+    <title>DS_COMPUTER</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <h1>Sistema de Información</h1>
-        <h2>Tienda de Computadoras</h2>
+        <h1>DS_COMPUTER</h1>
+
     </header>
     <nav>
         <ul>
@@ -36,8 +37,73 @@
 
         <img src="img/portada.png"
              alt="Tienda de Computadoras"
-             width="700">
+             width="900">
         </section>
+       <section>
+
+    <h2>Solicitar un Servicio Técnico</h2>
+
+    <p>
+        Complete el siguiente formulario para solicitar una visita técnica o
+        programar el ingreso de su equipo a nuestro taller.
+    </p>
+
+    <form action="#" method="post">
+
+        <label for="nombre">Nombre Completo</label><br>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <br><br>
+
+        <label for="ci">Carnet de Identidad (CI)</label><br>
+        <input type="text" id="ci" name="ci" required>
+
+        <br><br>
+
+        <label for="telefono">Teléfono</label><br>
+        <input type="tel" id="telefono" name="telefono" required>
+
+        <br><br>
+
+        <label for="correo">Correo Electrónico</label><br>
+        <input type="email" id="correo" name="correo" required>
+
+        <br><br>
+
+        <label for="servicio">Seleccione el Servicio</label><br>
+
+        <select id="servicio" name="servicio">
+
+            <option value="">-- Seleccione una opción --</option>
+
+            <option>Mantenimiento de Computadoras</option>
+
+            <option>Mantenimiento de Laptops</option>
+
+            <option>Mantenimiento de Impresoras</option>
+
+            <option>Instalación de Cámaras de Seguridad</option>
+
+            <option>Configuración de Redes</option>
+
+            <option>Venta de Equipos Informáticos</option>
+
+            <option>Otro Servicio</option>
+
+        </select>
+
+        <br><br>
+
+        <label for="fecha">Fecha de Visita</label><br>
+        <input type="date" id="fecha" name="fecha">
+
+        <br><br>
+
+        <input type="submit" value="Solicitar Servicio">
+
+    </form>
+
+</section>
     </main>
 
     <hr>
