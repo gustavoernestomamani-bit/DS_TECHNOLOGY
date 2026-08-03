@@ -4,346 +4,208 @@
     padding:0;
     box-sizing:border-box;
 }
-
 body{
-
     font-family:Arial, Helvetica, sans-serif;
-
     background:#0f172a;
-
     color:white;
-
     line-height:1.6;
-
 }
-
-
-
+/* ---------- HEADER ---------- */
 header{
-
     background:#111827;
-
     text-align:center;
-
     padding:35px;
-
     border-bottom:3px solid #00e5ff;
-
 }
-
 header h1{
-
     font-size:3rem;
-
     color:#00e5ff;
-
     letter-spacing:3px;
-
 }
-
 header p{
-
     margin-top:10px;
-
     color:#d1d5db;
-
     font-size:18px;
-
 }
-
-
-
+/* ---------- MENÚ ---------- */
 nav{
-
     background:#1e293b;
-
     padding:15px;
-
+    position:relative;
 }
-
 nav ul{
-
     display:flex;
-
     justify-content:center;
-
     gap:30px;
-
     list-style:none;
-
 }
-
 nav a{
-
     color:white;
-
     text-decoration:none;
-
     font-weight:bold;
-
     transition:.3s;
-
 }
-
 nav a:hover{
-
     color:#00e5ff;
-
 }
-
-
-
+/* Botón hamburguesa: oculto en escritorio, visible solo en móvil */
+#btn-menu{
+    display:none;
+    background:none;
+    border:2px solid #00e5ff;
+    border-radius:8px;
+    color:#00e5ff;
+    font-size:22px;
+    padding:6px 14px;
+    cursor:pointer;
+    margin:0 auto;
+}
+#btn-menu:hover{
+    background:#00e5ff;
+    color:#111827;
+}
+/* ---------- MAIN ---------- */
 main{
-
     width:90%;
-
     max-width:1200px;
-
     margin:30px auto;
-
 }
-
+/* ---------- TARJETAS ---------- */
 section{
-
     background:#1e293b;
-
     margin-bottom:30px;
-
     padding:25px;
-
     border-radius:15px;
-
     border:1px solid #334155;
-
     box-shadow:0px 0px 15px rgba(0,229,255,.15);
-
 }
-
 section h2{
-
     color:#00e5ff;
-
     margin-bottom:15px;
-
 }
-
-
+/* ---------- PORTADA ---------- */
 .portada{
-
     text-align:center;
-
 }
-
 .portada img{
-
     width:100%;
-
     max-width:900px;
-
     border-radius:15px;
-
     margin:20px auto;
-
     display:block;
-
 }
-
 .portada p{
-
     margin-top:20px;
-
     text-align:justify;
-
 }
-
-
+/* ---------- SERVICIOS ---------- */
 .contenedor-servicios{
-
     display:flex;
-
     flex-wrap:wrap;
-
     gap:20px;
-
 }
-
 .contenedor-servicios article{
-
     flex:1 1 300px;
-
     background:#111827;
-
     padding:20px;
-
     border-radius:12px;
-
     transition:.3s;
-
     border:1px solid #374151;
-
 }
-
 .contenedor-servicios article:hover{
-
     transform:translateY(-8px);
-
     box-shadow:0px 0px 20px #00e5ff;
-
 }
-
 article h3{
-
     color:#38bdf8;
-
     margin-bottom:10px;
-
 }
-
-
-
+/* ---------- FORMULARIO ---------- */
 form{
-
     display:flex;
-
     flex-direction:column;
-
 }
-
 label{
-
     margin-top:15px;
-
     margin-bottom:5px;
-
     font-weight:bold;
-
 }
-
 input,
 select{
-
     padding:12px;
-
     border:none;
-
     border-radius:8px;
-
     font-size:16px;
-
 }
-
 input:focus,
 select:focus{
-
     outline:2px solid #00e5ff;
-
 }
-
 input[type="submit"]{
-
     background:#00bcd4;
-
     color:white;
-
     margin-top:25px;
-
     cursor:pointer;
-
     font-weight:bold;
-
     transition:.3s;
-
 }
-
 input[type="submit"]:hover{
-
     background:#0097a7;
-
 }
-
-
-
+/* ---------- FOOTER ---------- */
 footer{
-
     background:#111827;
-
     text-align:center;
-
     padding:30px;
-
     border-top:3px solid #00e5ff;
-
 }
-
 footer h3{
-
     color:#00e5ff;
-
     margin-bottom:10px;
-
 }
-
 footer p{
-
     margin:6px;
-
 }
-
-
+/*=============================================
+            RESPONSIVE DESIGN
+==============================================*/
 @media(max-width:768px){
-
-    /* Menú en columna */
-
+    /* Muestra el botón hamburguesa */
+    #btn-menu{
+        display:block;
+    }
+    /* El menú empieza oculto y en columna en móvil */
     nav ul{
-
+        display:none;
         flex-direction:column;
-
         align-items:center;
-
         gap:15px;
-
+        margin-top:15px;
     }
-
-
-
+    /* Clase que el JavaScript agrega para mostrar el menú */
+    nav ul.mostrar{
+        display:flex;
+    }
+    /* Tarjetas una debajo de otra */
     .contenedor-servicios{
-
         flex-direction:column;
-
     }
-
     article{
-
         width:100%;
-
     }
-
-
-
+    /* Reduce el título */
     header h1{
-
         font-size:2rem;
-
     }
-
-
+    /* Ajusta el contenido */
     main{
-
         width:95%;
-
     }
-
     section{
-
         padding:20px;
-
     }
-
     input,
     select{
-
         width:100%;
-
     }
-
 }
