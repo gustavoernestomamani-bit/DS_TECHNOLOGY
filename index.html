@@ -1,116 +1,338 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+
     <meta charset="UTF-8">
+
+    <!-- Hace que la página sea responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DS_COMPUTER</title>
-    <link rel="stylesheet" href="style.css">
+
+    <title>DS_COMPUTER | Soluciones Tecnológicas</title>
+
+    <!-- Archivo CSS -->
+    <link rel="stylesheet" href="styles.css">
+
 </head>
+
 <body>
 
+
+
     <header>
+
         <h1>DS_COMPUTER</h1>
 
+        <p>Venta de Equipos Informáticos y Servicio Técnico Especializado</p>
+
     </header>
+
+
+
     <nav>
+
         <ul>
+
             <li><a href="#">Inicio</a></li>
+
             <li><a href="#">Servicios</a></li>
-            <li><a href="#">Productos</a></li>
+
             <li><a href="#">Nosotros</a></li>
+
             <li><a href="#">Contacto</a></li>
+
         </ul>
+
     </nav>
-    <hr>
+
+
 
     <main>
-        <section>   
-        <h3>Bienvenido</h3>
 
-        <p>
-            En DS Technology brindamos soluciones tecnológicas para hogares,
-                empresas e instituciones. Nos especializamos en la venta de
-                computadoras, accesorios y componentes, además de ofrecer
-                servicios profesionales de mantenimiento, instalación y soporte
-                técnico.
-        </p>
+        <!-- PORTADA -->
 
-        <img src="img/portada.png"
-             alt="Tienda de Computadoras"
-             width="900">
+        <section class="portada">
+
+            <h2>Bienvenido a DS_COMPUTER</h2>
+
+            <img src="img/portada.png" alt="Portada DS_COMPUTER">
+
+            <p>
+
+                Somos una empresa especializada en venta de equipos de
+                computación y servicio técnico profesional.
+
+                Brindamos soluciones informáticas para hogares,
+                empresas e instituciones con atención rápida,
+                segura y garantizada.
+
+            </p>
+
         </section>
-       <section>
 
-    <h2>Solicitar un Servicio Técnico</h2>
+        <!-- SERVICIOS -->
 
-    <p>
-        Complete el siguiente formulario para solicitar una visita técnica o
-        programar el ingreso de su equipo a nuestro taller.
-    </p>
+        <section class="servicios">
 
-    <form action="#" method="post">
+            <h2>Nuestros Servicios</h2>
 
-        <label for="nombre">Nombre Completo</label><br>
-        <input type="text" id="nombre" name="nombre" required>
+            <div class="contenedor-servicios">
 
-        <br><br>
+                <article>
 
-        <label for="ci">Carnet de Identidad (CI)</label><br>
-        <input type="text" id="ci" name="ci" required>
+                    <h3>💻 Mantenimiento de Computadoras</h3>
 
-        <br><br>
+                    <p>
 
-        <label for="telefono">Teléfono</label><br>
-        <input type="tel" id="telefono" name="telefono" required>
+                        Limpieza interna, cambio de pasta térmica,
+                        optimización del sistema y actualización
+                        de componentes.
 
-        <br><br>
+                    </p>
 
-        <label for="correo">Correo Electrónico</label><br>
-        <input type="email" id="correo" name="correo" required>
+                </article>
 
-        <br><br>
+                <article>
 
-        <label for="servicio">Seleccione el Servicio</label><br>
+                    <h3>💼 Reparación de Laptops</h3>
 
-        <select id="servicio" name="servicio">
+                    <p>
 
-            <option value="">-- Seleccione una opción --</option>
+                        Cambio de pantalla, teclado,
+                        batería, disco SSD,
+                        memoria RAM y reparación electrónica.
 
-            <option>Mantenimiento de Computadoras</option>
+                    </p>
 
-            <option>Mantenimiento de Laptops</option>
+                </article>
 
-            <option>Mantenimiento de Impresoras</option>
+                <article>
 
-            <option>Instalación de Cámaras de Seguridad</option>
+                    <h3>🖨 Mantenimiento de Impresoras</h3>
 
-            <option>Configuración de Redes</option>
+                    <p>
 
-            <option>Venta de Equipos Informáticos</option>
+                        Limpieza, reparación,
+                        instalación de tinta continua,
+                        mantenimiento preventivo y correctivo.
 
-            <option>Otro Servicio</option>
+                    </p>
 
-        </select>
+                </article>
 
-        <br><br>
+                <article>
 
-        <label for="fecha">Fecha de Visita</label><br>
-        <input type="date" id="fecha" name="fecha">
+                    <h3>📹 Cámaras de Seguridad</h3>
 
-        <br><br>
+                    <p>
 
-        <input type="submit" value="Solicitar Servicio">
+                        Instalación y configuración
+                        de sistemas DVR,
+                        NVR y cámaras IP.
 
-    </form>
+                    </p>
 
-</section>
+                </article>
+
+                <article>
+
+                    <h3>🌐 Redes Informáticas</h3>
+
+                    <p>
+
+                        Cableado estructurado,
+                        configuración de routers,
+                        switches y redes empresariales.
+
+                    </p>
+
+                </article>
+
+                <article>
+
+                    <h3>🛒 Venta de Equipos</h3>
+
+                    <p>
+
+                        Computadoras Gamer,
+                        laptops,
+                        accesorios,
+                        periféricos y componentes.
+
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- NOSOTROS -->
+
+        <section class="nosotros">
+
+            <h2>¿Quiénes Somos?</h2>
+
+            <p>
+
+                En DS_COMPUTER trabajamos para brindar soluciones
+                tecnológicas confiables.
+
+                Nuestro compromiso es ofrecer un servicio técnico
+                profesional con garantía, utilizando herramientas
+                modernas y repuestos de calidad.
+
+            </p>
+
+        </section>
+
+        <!-- FORMULARIO -->
+
+        <section class="contacto">
+
+            <h2>Solicitar un Servicio Técnico</h2>
+
+            <form action="#" method="post">
+
+                <label for="nombre">
+                    Nombre Completo
+                </label>
+
+                <input
+                    type="text"
+                    id="nombre"
+                    name="nombre"
+                    required>
+
+                <label for="ci">
+                    Carnet de Identidad
+                </label>
+
+                <input
+                    type="text"
+                    id="ci"
+                    name="ci"
+                    required>
+
+                <label for="telefono">
+                    Teléfono
+                </label>
+
+                <input
+                    type="tel"
+                    id="telefono"
+                    name="telefono"
+                    required>
+
+                <label for="correo">
+                    Correo Electrónico
+                </label>
+
+                <input
+                    type="email"
+                    id="correo"
+                    name="correo"
+                    required>
+
+                <label for="servicio">
+
+                    Servicio
+
+                </label>
+
+                <select
+                    id="servicio"
+                    name="servicio">
+
+                    <option>
+                        Seleccione un servicio
+                    </option>
+
+                    <option>
+                        Mantenimiento de Computadoras
+                    </option>
+
+                    <option>
+                        Reparación de Laptops
+                    </option>
+
+                    <option>
+                        Mantenimiento de Impresoras
+                    </option>
+
+                    <option>
+                        Instalación de Cámaras
+                    </option>
+
+                    <option>
+                        Redes Informáticas
+                    </option>
+
+                    <option>
+                        Venta de Equipos
+                    </option>
+
+                </select>
+
+                <label for="fecha">
+
+                    Fecha de Visita
+
+                </label>
+
+                <input
+                    type="date"
+                    id="fecha"
+                    name="fecha">
+
+                <input
+                    type="submit"
+                    value="Solicitar Servicio">
+
+            </form>
+
+        </section>
+
     </main>
 
-    <hr>
+    <!-- ================= FOOTER ================= -->
 
     <footer>
-        <p>© 2026 Tienda de Computadoras - Todos los derechos reservados.</p>
+
+        <h3>DS_COMPUTER</h3>
+
+        <p>
+
+            Tecnología • Servicio Técnico • Redes • Cámaras • Impresoras
+
+        </p>
+
+        <p>
+
+            📞 +591 78611915
+
+        </p>
+
+        <p>
+
+            📧 bgus1792@gmail.com
+
+        </p>
+
+        <p>
+
+            📍 Oruro - Bolivia
+
+        </p>
+
+        <p>
+
+            © 2026 DS_COMPUTER | Todos los derechos reservados.
+
+        </p>
+
     </footer>
 
 </body>
+
 </html>
