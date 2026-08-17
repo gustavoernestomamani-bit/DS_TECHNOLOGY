@@ -32,5 +32,4 @@ formContacto.addEventListener("submit", (event) => {
         return;
     }
 
-    // Todo está bien: no se frena el envío, el formulario viaja a procesar.php
 });
